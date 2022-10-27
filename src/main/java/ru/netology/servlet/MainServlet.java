@@ -20,6 +20,9 @@ public class MainServlet extends HttpServlet {
 
     @Override
     public void init() {
+        //add di-java
+
+
         final var repository = new PostRepository();
         final var service = new PostService(repository);
         controller = new PostController(service);
